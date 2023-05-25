@@ -1,0 +1,29 @@
+#option{
+  visibility: visible;
+  
+  @media (max-width: 1024px) {
+    visibility: hidden;
+  }
+
+
+  
+}
+
+#optionMob{
+  visibility: hidden;
+  
+  @media (max-width: 1024px) {
+    visibility: visible;
+  }
+
+}
+
+#optionDesk{
+  visibility: visible;
+  
+  @media (max-width: 1024px) {
+    visibility: hidden;
+  }
+
+
+}
