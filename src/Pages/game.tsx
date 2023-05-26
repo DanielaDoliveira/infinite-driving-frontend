@@ -1,7 +1,14 @@
 
-
+import { Container, ImageWallpaper } from '../MainStyle/style'
+import  { MenuNav } from '../Components/MenuNav'
+import '../app/globals.css'
 export default function Game(){
   return(
-    <>HELLO WORLD! -. Game(this)</>
+    <Container>
+    <ImageWallpaper>
+   <MenuNav/>
+   </ImageWallpaper>
+   
+   </Container>
   );
 }

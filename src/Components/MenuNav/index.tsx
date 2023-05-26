@@ -17,6 +17,7 @@ import {
 
 import * as Icon from  'react-bootstrap-icons'
 import './styles.css'
+
 import Link from 'next/link'
 
 
@@ -75,7 +76,7 @@ export  const MenuNav = ()=>{
                 <LogoTxt>INFINITE DRIVING</LogoTxt>
              
                  <OptionsMenuRanking >
-                 <Link href = '/ranking'
+                 <Link href = '/'
             className='no-underline text-sm 
             text-[#d9d9d9] hover:text-[#D07407]
             '

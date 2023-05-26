@@ -13,7 +13,7 @@ justify-center
 text-2xl
 `
 export const Description = tw.div`
-  text-[#D9D9D9]
+  
   text-center
   mb-5
   text-base
