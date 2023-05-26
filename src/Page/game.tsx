@@ -5,7 +5,7 @@ import '../app/globals.css'
 
 import * as Icon from  'react-bootstrap-icons'
 import { Description, Title, TitlesTxt } from '@/Styles/ContentStyle';
-export default function game(){
+export default function Game(){
   return(
     <Container >
     <ImageWallpaper>
