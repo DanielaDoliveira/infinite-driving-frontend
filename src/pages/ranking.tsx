@@ -5,8 +5,8 @@ import '../app/globals.css'
 import * as Style from '../Styles/RankingBoard/styles'
 export default function Ranking(){
   return(
-      <Container>
-         <ImageWallpaper>
+      <Container className='pb-[100%]'>
+      
         <MenuNav/>
         <Style.Container>
 
@@ -79,8 +79,7 @@ export default function Ranking(){
 
         
         </Style.Container>
-        </ImageWallpaper>
-
+      
       </Container>
   );
 }

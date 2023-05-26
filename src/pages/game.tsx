@@ -8,7 +8,7 @@ import { Description, Title, TitlesTxt } from '@/Styles/ContentStyle';
 export default function Game(){
   return(
     <Container >
-    <ImageWallpaper>
+
    <MenuNav/>
    <Title className='flex flex-col'> <TitlesTxt  className='mt-10'> Commands </TitlesTxt> </Title>
 
@@ -20,7 +20,7 @@ export default function Game(){
     
 
 
-   </ImageWallpaper>
+
  
    </Container>
   );
