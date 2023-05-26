@@ -7,6 +7,7 @@ w-screen
 m-0
 p-0
 bg-stone-950
+text-[#D9D9D9]
 `
 export const ImageWallpaper = tw.div`
 bg-[url('../images/carmobile.png')]
