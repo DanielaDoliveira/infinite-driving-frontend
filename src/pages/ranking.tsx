@@ -3,7 +3,7 @@ import { Container, ImageWallpaper } from '../MainStyle/style'
 import  { MenuNav } from '../Components/MenuNav'
 import '../app/globals.css'
 import * as Style from '../Styles/RankingBoard/styles'
-export default function ranking(){
+export default function Ranking(){
   return(
       <Container>
          <ImageWallpaper>
