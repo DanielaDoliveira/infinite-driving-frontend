@@ -19,6 +19,7 @@ import * as Icon from  'react-bootstrap-icons'
 import './styles.css'
 
 import Link from 'next/link'
+import { ButtonHTMLAttributes } from 'react'
 
 
 export  const MenuNav = ()=>{
@@ -34,7 +35,7 @@ export  const MenuNav = ()=>{
   
       <TopNav>
         
-     
+       
         <OptionsNetwork >
         <Link href = 'https://www.linkedin.com/in/daniela-fialho-d-oliveira-479b53163/'>
         <Icon.Linkedin size = { 22 } color='#d9d9d9'/>  
@@ -75,30 +76,33 @@ export  const MenuNav = ()=>{
           <DownNav>
                 <LogoTxt>INFINITE DRIVING</LogoTxt>
              
-                 <OptionsMenuRanking >
-                 <Link href = '/'
+                
+                <OptionsMenuRanking  >
+                 <Link href = "/"
+              
             className='no-underline text-sm 
             text-[#d9d9d9] hover:text-[#D07407]
             '
             >
                   Home       </Link>
               </OptionsMenuRanking>
-        
-              <OptionsMenuRanking>
-            <Link href = '/ranking'
+         
+              
+              <OptionsMenuRanking >
+            <Link href = "/ranking"
             className='no-underline
             text-[#d9d9d9] hover:text-[#D07407]
             '
             >
            
-                Ranking
+            Ranking
             
             </Link>
             </OptionsMenuRanking>
            
          
              <OptionsMenuAll id= 'option'>
-             <Link href = '/game'
+             <Link href  = "/game"
               className='no-underline
               text-[#d9d9d9] hover:text-[#D07407] '
              >

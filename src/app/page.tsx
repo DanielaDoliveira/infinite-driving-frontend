@@ -7,7 +7,7 @@ import './globals.css'
 export default function Home() {
   return (
     <Container>
-     
+   
      <ImageWallpaper>
      <MenuNav/>
      <Content></Content>
