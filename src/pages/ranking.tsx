@@ -38,8 +38,12 @@ export default function Ranking({ ranking }:RankingDataProps){
              Best Players
             </Style.Title>
           </Style.TitleContainer>
+
+       {/* @ts-ignore */}
          {rankData.map(item => (
+           
            <section
+        
             key = {item.id }
             className = "">
                <Style.BoardContainer>
