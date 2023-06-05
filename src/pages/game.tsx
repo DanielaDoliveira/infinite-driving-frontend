@@ -15,10 +15,10 @@ export default function Game(){
 
 
   const {unityProvider, isLoaded,unload, loadingProgression} = useUnityContext({
-    loaderUrl:"build/infinitedriving.loader.js",
-    dataUrl: "build/infinitedriving.data.unityweb",
-    frameworkUrl: "build/infinitedriving.framework.js.unityweb",
-    codeUrl: "build/infinitedriving.wasm.unityweb",
+    loaderUrl:"build/infiniteweb.loader.js",
+    dataUrl: "build/infiniteweb.data",
+    frameworkUrl: "build/infiniteweb.framework.js",
+    codeUrl: "build/infiniteweb.wasm",
     webglContextAttributes:{
       preserveDrawingBuffer:true,
     },
