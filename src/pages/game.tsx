@@ -7,8 +7,12 @@ import * as Icon from  'react-bootstrap-icons'
 import { Description, Title, TitlesTxt } from '@/Styles/ContentStyle';
 import { DownNav, LogoTxt, MainContainer, OptionsMenuAll, OptionsMenuRanking, OptionsNetwork, TextOptions, TopNav } from '@/Styles/Navbar'
 import Link from 'next/link'
+import intercept from 'intercept-stdout'
 import { AnchorHTMLAttributes, useEffect } from 'react'
+
+
 export default function Game(){
+
 
   const {unityProvider, isLoaded,unload, loadingProgression} = useUnityContext({
     loaderUrl:"build/infinitedriving.loader.js",
@@ -28,7 +32,10 @@ export default function Game(){
    
     await unload();
   }
-
+  async function handleClickR() {
+   
+    await unload();
+  }
   return(
     <Container >
 
@@ -65,7 +72,7 @@ export default function Game(){
 
       </OptionsMenuRanking>
 
-      <OptionsMenuRanking  onClick={handleClick}>
+      <OptionsMenuRanking  onClick={handleClickR}>
         <Link 
           href = {"/ranking"}
           className='no-underline text-[#d9d9d9] hover:text-[#D07407]'
@@ -87,7 +94,7 @@ export default function Game(){
 
 
 
-   <Title className='flex flex-col'> <TitlesTxt  className='mt-10'> Commands </TitlesTxt> </Title>
+ 
   <div className='flex-col m-10 items-center justify-center text-center text-base font-mono'>
   {isLoaded === false && (
        
@@ -103,7 +110,7 @@ export default function Game(){
       unityProvider={unityProvider}
     />
     </div>
-
+    <Title className='flex flex-col'> <TitlesTxt  className='mt-10'> Commands </TitlesTxt> </Title>
    <div className='flex items-center justify-center'>
         <Icon.ArrowLeftSquare className=' m-3 mr-2 ' size={30}/>
         <Icon.ArrowRightSquare className='m-3' size={30}/>
