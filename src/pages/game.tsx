@@ -7,13 +7,11 @@ import * as Icon from  'react-bootstrap-icons'
 import { Description, Title, TitlesTxt } from '@/Styles/ContentStyle';
 import { DownNav, LogoTxt, MainContainer, OptionsMenuAll, OptionsMenuRanking, OptionsNetwork, TextOptions, TopNav } from '@/Styles/Navbar'
 import Link from 'next/link'
-import intercept from 'intercept-stdout'
-import { AnchorHTMLAttributes, useEffect } from 'react'
 
 
 export default function Game(){
 
-
+  
   const {unityProvider, isLoaded,unload, loadingProgression} = useUnityContext({
     loaderUrl:"build/infiniteweb.loader.js",
     dataUrl: "build/infiniteweb.data",
@@ -37,6 +35,8 @@ export default function Game(){
     await unload();
   }
   return(
+    <>
+   
     <Container >
 
 <MainContainer>   
@@ -122,5 +122,6 @@ export default function Game(){
 
  
    </Container>
+   </>
   );
 }

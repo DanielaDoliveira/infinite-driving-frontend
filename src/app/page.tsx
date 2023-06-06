@@ -1,23 +1,30 @@
+import Head from 'next/head';
 
 import {Container, ImageWallpaper,Text } from '../MainStyle/style'
 import { MenuNav } from '../Components/MenuNav'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Content } from '@/Components/Content';
+
 import './globals.css'
+//@ts-ignore
+const Page = (props) => (
+  <div>
 
-export default function Home() {
-  return (
-    <Container>
-
-     <ImageWallpaper>
-     <MenuNav/>
-     <Content></Content>
-     </ImageWallpaper>
-
+    <>
      
-     
+     <Container>
+  
+  <ImageWallpaper>
+  <MenuNav/>
+  <Content></Content>
+  </ImageWallpaper>
  
-    </Container>    
+  
+  
+ 
+ </Container>    
+     </>
+  </div>
+);
 
-  )
-}
+export default Page;

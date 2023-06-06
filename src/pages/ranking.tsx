@@ -14,6 +14,7 @@ type RankingProps = {
 interface RankingDataProps{
   ranking:RankingProps;
 }
+
 export default function Ranking({ ranking }:RankingDataProps){
 
   const [rankData,setRankData] =useState(ranking || []);
@@ -27,7 +28,11 @@ export default function Ranking({ ranking }:RankingDataProps){
     }
     handleSeeRank();
   },[]);
+
+
   return(
+<>
+   
       <Container className='pb-[100%]'>
       
         <MenuNav/>
@@ -60,5 +65,6 @@ export default function Ranking({ ranking }:RankingDataProps){
         </Style.Container>
       
       </Container>
+      </>
   );
 }
